@@ -9,7 +9,7 @@ on:
       solution_name:
         description: 'SCE-FS'
         required: true
-        default: ALMLab
+        default: SCE-FS
        #Do Not change these values
       solution_exported_folder:
         description: 'folder name for staging the exported solution *do not change*'
