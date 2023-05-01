@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_ss_workordertypes" />
+  <EntityRelationship Name="lk_ss_workordertypes_createdby" />
+  <EntityRelationship Name="lk_ss_workordertypes_modifiedby" />
+  <EntityRelationship Name="owner_ss_workordertypes" />
+  <EntityRelationship Name="ss_ss_workordertypes_workorder_msdyn_workord" />
+  <EntityRelationship Name="team_ss_workordertypes" />
+  <EntityRelationship Name="user_ss_workordertypes" />
+</EntityRelationships>
