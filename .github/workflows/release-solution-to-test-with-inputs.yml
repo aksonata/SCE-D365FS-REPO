@@ -1,0 +1,22 @@
+name: Release action
+# Call the reusable workflow release-solution-with-inputs.yml
+# Release your solution to prod when you create a new release.
+
+on:
+  release:
+      types: [created]        
+permissions:
+  contents: write
+jobs:
+  Release-solution-ALMLab:
+    uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
+    with:
+      #You can specify the solution name here
+      solution_name: SCEFS
+      #Update your values here
+      BUILD_ENVIRONMENT_URL: 'https://org83e7fbc9.crm.dynamics.com'
+      PRODUCTION_ENVIRONMENT_URL: 'https://projectops3.crm.dynamics.com'
+      CLIENT_ID: '70320879-bb5c-433a-8930-4bcc5a54804a'
+      TENANT_ID: '6a59f563-4133-4d3f-b901-8ae21252f023'    
+    secrets:
+      envSecret: ${{ secrets.SCE_D365_DEV }}
